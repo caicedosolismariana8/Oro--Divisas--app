@@ -10,6 +10,8 @@ describe('publicación estática', () => {
     ]);
 
     assert.match(html, /<link rel="stylesheet" href="\.\/src\/styles\.css" \/>/);
+    assert.match(html, /<script type="module" src="\.\/src\/main\.js"><\/script>/);
     assert.doesNotMatch(script, /import\s+['"]\.\/styles\.css['"]/);
+    assert.match(script, /^import \{ analyze \} from '\.\/analysis\.js';/);
   });
 });

@@ -2,6 +2,8 @@
 
 Web en español, adaptada a iPad y móvil, que consulta velas reales de 5 minutos para XAU/USD y pares de divisas, valida su antigüedad y presenta una lectura técnica **COMPRA**, **VENTA** o **ESPERAR**.
 
+La publicación es completamente estática: `index.html` carga directamente la hoja de estilos y los módulos JavaScript, sin depender de transformaciones de un empaquetador en el navegador.
+
 ## Antes de empezar
 
 - La aplicación no contiene datos ficticios ni un modo demo. Sin fuente, ante un error o con datos de más de 20 minutos, muestra **ESPERAR** y oculta Entrada, Stop Loss y Take Profit.
